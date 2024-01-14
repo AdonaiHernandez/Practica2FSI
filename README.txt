@@ -1,4 +1,4 @@
-# Practica2FSI
+ Practica2FSI
 
 El objetivo de este modelo es clasificar imagenes segun el deporte que se está practicando. Cuenta con 100 deportes distintos (100 labels).
 El rendimiento conseguido es de un 0.75 de val_acuracity.
