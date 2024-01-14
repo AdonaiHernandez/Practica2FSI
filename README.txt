@@ -12,6 +12,7 @@ Uso tecnicas de data augmentation y de dropout para intentar esquivar en lo posi
 El modelo tiene una red notablemente densa:
 
 _________________________________________________________________
+_________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
  conv2d_20 (Conv2D)          (None, 222, 222, 64)      1792      
@@ -35,7 +36,38 @@ _________________________________________________________________
  conv2d_24 (Conv2D)          (None, 51, 51, 256)       295168    
                                                                  
  conv2d_25 (Conv2D)          (None, 49, 49, 256)       590080    
-...
+                                                                 
+ conv2d_26 (Conv2D)          (None, 47, 47, 256)       590080    
+                                                                 
+ max_pooling2d_10 (MaxPooli  (None, 23, 23, 256)       0         
+ ng2D)                                                           
+                                                                 
+ dropout_14 (Dropout)        (None, 23, 23, 256)       0         
+                                                                 
+ conv2d_27 (Conv2D)          (None, 21, 21, 512)       1180160   
+                                                                 
+ conv2d_28 (Conv2D)          (None, 19, 19, 512)       2359808   
+                                                                 
+ conv2d_29 (Conv2D)          (None, 17, 17, 512)       2359808   
+                                                                 
+ max_pooling2d_11 (MaxPooli  (None, 8, 8, 512)         0         
+ ng2D)                                                           
+                                                                 
+ dropout_15 (Dropout)        (None, 8, 8, 512)         0         
+                                                                 
+ flatten_2 (Flatten)         (None, 32768)             0         
+                                                                 
+ dense_6 (Dense)             (None, 2048)              67110912  
+                                                                 
+ dropout_16 (Dropout)        (None, 2048)              0         
+                                                                 
+ dense_7 (Dense)             (None, 1024)              2098176   
+                                                                 
+ dropout_17 (Dropout)        (None, 1024)              0         
+                                                                 
+ dense_8 (Dense)             (None, 100)               102500    
+                                                                 
+=================================================================
 Total params: 76946852 (293.53 MB)
 Trainable params: 76946852 (293.53 MB)
 Non-trainable params: 0 (0.00 Byte)
